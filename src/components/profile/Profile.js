@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImage from 'defaultImg.jpg';
+import s from './Profile.module.css';
 
 export default function Profile({
   username,
@@ -9,15 +10,15 @@ export default function Profile({
   stats,
 }) {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt={username} class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+    <div className={s.profile}>
+      <div className={s.description}>
+        <img src={avatar} alt={username} className={s.avatar} />
+        <p className={s.name}>{username}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className={s.stats}>
         <li>
           <span class="label">Followers</span>
           <span class="quantity">{stats.followers}</span>
