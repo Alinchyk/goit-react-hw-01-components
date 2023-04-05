@@ -1,0 +1,28 @@
+.statistics {
+  width: 25%;
+  margin: 0 auto;
+  height: 130px;
+  border: 1px solid black;
+  margin-top: 40px;
+}
+.statList {
+  display: flex;
+}
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+.item {
+  width: 20%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  color: white;
+}
+
+.item span:first-child {
+  margin-top: 10px;
+}
